@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="action_contact_customer" model="ir.actions.act_window">
+            <field name="name">Customers</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">tree,form</field>
+<!--            <field name="domain">[('customer_rank', '>', 0)]</field>-->
+            <field name="domain">[('partner_category', '=', 'customer')]</field>
+<!--            <field name="context">{'default_customer_category': 'customer'}</field>-->
+        </record>
+
+<!--        <field name="context">{'default_partner_category': 'customer'}</field>-->
+<!--        <field name="context">{'default_partner_category': 'customer'}</field>-->
+
+        <record id="action_contact_vendor" model="ir.actions.act_window">
+            <field name="name">Vendors</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('partner_category', '=', 'vendor')]</field>
+<!--            <field name="context">{'default_partner_category': 'vendor'}</field>-->
+        </record>
+
+<!--        <field name="domain">[('supplier_rank', '>', 0)]</field>-->
+<!--        <field name="context">{'default_supplier_rank': 1, 'search_default_supplier': 1}</field>-->
+
+        <record id="action_contact_employee" model="ir.actions.act_window">
+            <field name="name">Employees</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('partner_category', '=', 'employee')]</field>
+<!--            <field name="context">{'default_partner_category': 'employee'}</field>-->
+        </record>
+
+<!--        <record id="action_contact_hide" model="ir.actions.act_window">-->
+<!--            <field name="res_model">res.partner</field>-->
+<!--        </record>-->
+
+    </data>
+</odoo>
