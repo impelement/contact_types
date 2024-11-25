@@ -4,7 +4,7 @@
     'summary': 'Categorize contacts into Customers, Vendors, and Employees',
     'description': 'Adds a category field to contacts'
                    ' Customers, Vendors, or Employees.',
-    'author': 'M Arsam Junaid',
+    'author': 'Impelement Digital',
     'depends': ['base', 'contacts'],
     'data': [
         'views/action.xml',
